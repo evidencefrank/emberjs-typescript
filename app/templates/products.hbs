@@ -1,0 +1,8 @@
+<h4>Number of Products: {{this.numberOfProducts}}</h4>
+<h4>Total Price: {{currency this.totalPrice}}</h4>
+<ul>
+  {{#each this.model as |product|}}
+    <h5>{{product.name}}</h5>
+    <p>{{currency product.price}}</p>
+  {{/each}}
+</ul>
